@@ -7,10 +7,47 @@
     <title>Syyed Muhammad Irshad</title>
 </head>
 <body>
-
-    <p>1. Personal Message: Store a person’s name in a variable, and print a message to that person. 
+<!-- 
+    <p>2. Personal Message: Store a person’s name in a variable, and print a message to that person. 
         Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
     </p>
+
+    <script>
+        var name = "Eric"
+        alert("Hello, " +name+ " ! , would you like to learn some Python today?");
+    </script>
     
+    <p>3. Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, 
+        uppercase, and titlecase.</p>
+
+        <script>
+            var nameUp = name.toUpperCase();
+            var nameLo = name.toLowerCase();
+            alert("Hello, " +nameUp+ " ! , would you like to learn some Python today?");
+            alert("Hello, " +nameLo+ " ! , would you like to learn some Python today?");
+        </script> -->
+
+<p>3. Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. 
+    Your output should look something like the following, including the quotation marks:</p>
+
+    Person Name : <input type="text" name="" id="quote"> <br>
+    <p>Select Person From List :</p>
+     <ul id="myList"></ul> <br>
+     <button>Check Quote</button>
+     Qoute : <h3 id="result"></h3>
+    <script>
+        
+        let person = ['Einstine','Mark','Nelson','Elon Musk'];
+        let list = document.getElementById("myList");
+
+            person.forEach((item)=>{
+            let li = document.createElement("li");
+            li.innerText = item;
+            list.appendChild(li);
+            })
+
+
+    </script>
+
 </body>
 </html>
